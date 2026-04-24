@@ -205,6 +205,103 @@
         #schedule-container {
             min-height: 300px;
         }
+        /* === АДАПТАЦИЯ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ === */
+@media (max-width: 768px) {
+    
+    /* Уменьшаем отступ сверху */
+    .timeline {
+        margin: 60px 0;
+        padding: 0 10px;
+    }
+
+    /* Уменьшаем ширину колонки */
+    .semester-column {
+        min-width: 140px;          /* Было 200px — теперь уже */
+    }
+
+    /* Уменьшаем шрифт дисциплин */
+    .disciplines-list li {
+        font-size: 0.7rem;         /* Было 0.85rem */
+        padding: 3px 5px;
+        margin: 1px 0;
+    }
+
+    /* Уменьшаем кружок */
+    .semester-number {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    /* Уменьшаем подпись */
+    .semester-label {
+        font-size: 0.45rem;
+    }
+
+    /* Уменьшаем отступы у маркера */
+    .semester-marker {
+        padding: 12px 0;           /* Было 20px */
+    }
+
+    /* Уменьшаем кнопки в панели */
+    .top-nav {
+        padding: 8px 10px;
+    }
+
+    .top-nav button {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+        gap: 5px;
+    }
+
+    .track-num {
+        font-size: 1.1rem;
+    }
+
+    /* Уменьшаем отступы у контента */
+    .content-wrapper {
+        padding: 10px;
+    }
+}
+
+/* === ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ЭКРАНОВ (телефоны) === */
+@media (max-width: 480px) {
+    
+    .semester-column {
+        min-width: 110px;          /* Ещё уже */
+    }
+
+    .disciplines-list li {
+        font-size: 0.65rem;
+        padding: 2px 4px;
+    }
+
+    .semester-number {
+        width: 30px;
+        height: 30px;
+        font-size: 0.85rem;
+    }
+
+    .semester-label {
+        font-size: 0.4rem;
+    }
+
+    .semester-marker {
+        padding: 10px 0;
+    }
+
+    /* Совсем компактные кнопки */
+    .top-nav button {
+        padding: 6px 8px;
+        font-size: 0.7rem;
+        gap: 3px;
+    }
+
+    .track-num {
+        font-size: 0.9rem;
+    }
+}
+        
     </style>
 </head>
 <body>
